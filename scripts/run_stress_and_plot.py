@@ -6,7 +6,6 @@
     EMAIL: josedercysilva@gmail.com
     DATE: Out, 2026
     LICENSE: MIT
-    NOTE: Feito com Auxilio do google antigravity com modelos gemini flash
 """
 
 import argparse

@@ -13,7 +13,7 @@ O sistema implementa uma arquitetura **multi-taxa e assíncrona** em C99 estrito
 
 ---
 
-## 📊 Validação Experimental & Telemetria em Tempo Real
+## Validação Experimental & Telemetria em Tempo Real
 
 Abaixo estão os resultados das simulações nominais e os testes de estresse de CPU gerados automaticamente pela pipeline de validação:
 
@@ -25,12 +25,12 @@ Abaixo estão os resultados das simulações nominais e os testes de estresse de
 | :---: | :---: |
 | ![Estados e Entradas](assets/states_and_inputs.png) | ![Resultados da Simulação](assets/simulation_results.png) |
 
-> 📑 **Documentação Técnica Completa:**  
+> **Documentação Técnica Completa:**  
 > O relatório técnico formal de engenharia com fundamentação matemática da cinemática e análise detalhada dos testes de estresse está disponível em [`report/technical_report.pdf`](report/technical_report.pdf).
 
 ---
 
-## 🏛️ Pilares de Arquitetura e Tempo Real
+## Pilares de Arquitetura e Tempo Real
 
 ### 1. Esquema Concorrente Multi-Taxa (Multi-Rate & Asynchronous)
 O sistema desacopla o laço de controle/telemetria do motor de física contínua por meio de duas threads POSIX periódicas com frequências distintas:
@@ -72,7 +72,7 @@ sequenceDiagram
 
 ---
 
-## 🛡️ Padrões de Código e Engenharia de Missão Crítica
+## Padrões de Código e Engenharia de Missão Crítica
 
 O código-fonte foi desenvolvido seguindo diretrizes rigorosas adotadas nas indústrias automotiva, aeroespacial e de defesa (**BARR-C:2018**, **MISRA C:2023** e **NASA JPL Power of Ten**):
 
@@ -87,7 +87,7 @@ O código-fonte foi desenvolvido seguindo diretrizes rigorosas adotadas nas ind�
 
 ---
 
-## ⚡ Compilação e Execução
+## Compilação e Execução
 
 ### Pré-requisitos
 - Sistema operacional Linux (x86_64 ou ARM64)
@@ -123,7 +123,7 @@ make clean
 
 ---
 
-## 🎮 Simulador Visual 2D Interativo (Python)
+## Simulador Visual 2D Interativo (Python)
 
 Além do motor de física em tempo real em C, o repositório inclui um simulador gráfico complementar construído em Python (`tkinter` + `numpy`) para inspeção de rota e controle manual:
 
@@ -138,7 +138,17 @@ make
 
 ---
 
-## 📁 Estrutura do Repositório
+## Metodologia & Ferramental de Engenharia
+
+O projeto foi construído combinando rigor de engenharia de sistemas embarcados com fluxos modernos de **AI-assisted pair programming**:
+
+- **Arquitetura de Tempo Real & Concorrência:** Especificação e design manual dos requisitos de determinismo temporal, modelagem da cinemática discretizada e configuração de sincronização segura via `PTHREAD_PRIO_INHERIT`.
+- **Desenvolvimento Acelerado por IA:** Utilização do ambiente **Google Antigravity** com modelos **Gemini** para prototipagem ágil das suítes de telemetria/estresse em Python, estruturação de documentação técnica e auditoria cruzada de conformidade com normas **MISRA C:2023** e **BARR-C:2018**.
+- **Auditoria & Verificação Estrita:** Revisão humana detalhada de todas as garantias de ponteiros seguros, integridade de memória estática e temporização livre de *drift*.
+
+---
+
+## Estrutura do Repositório
 
 ```text
 .
@@ -166,9 +176,9 @@ make
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **José Dercy Vieira da Silva Filho**  
 - Email: [josedercysilva@gmail.com](mailto:josedercysilva@gmail.com)  
-- LinkedIn: [linkedin.com/in/josedercy](https://linkedin.com/in/josedercy) *(ajuste com seu link)*  
-- GitHub: [github.com/josedercy](https://github.com/josedercy) *(ajuste com seu usuário)*  
+- LinkedIn: [linkedin.com/in/josedercysilva](https://linkedin.com/in/josedercysilva) 
+- GitHub: [github.com/josedercysilva](https://github.com/josedercysilva)
