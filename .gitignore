@@ -11,12 +11,28 @@ data/*
 *.txt
 *.log
 
-# Cache do Python
+# Cache e ambiente virtual do Python
 __pycache__/
 *.pyc
+.venv/
+*/.venv/
 
 # Arquivos de sistema e IDE
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+
+# Notas pessoais de estudo e documentação interna
+.notas/
+.docs/
+
+# Fontes Typst e guias internos (apenas o technical_report.pdf é exposto)
+report/*.typ
+report/c_architecture_guide.*
+report/vfinal-*
+report/propt.txt
+relatorio-segundo-lab/
+assets/marca_ufam_*
+
+
