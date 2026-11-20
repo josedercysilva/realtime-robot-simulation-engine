@@ -1,0 +1,9 @@
+*.h linguist-language=C
+*.c linguist-language=C
+
+# 2. Excluir scripts Python e simuladores das estatísticas de linguagem do GitHub
+scripts/** linguist-vendored
+python_sim/** linguist-vendored
+*.py linguist-vendored
+
+python_sim/Makefile linguist-vendored
